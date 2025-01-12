@@ -1,0 +1,28 @@
+@hostname = localhost
+@port = 3333
+@api_version = v1
+@content_type = application/json
+
+GET http://{{hostname}}:{{port}}/api/{{api_version}}/opening HTTP/1.1
+
+###
+
+GET http://{{hostname}}:{{port}}/api/{{api_version}}/openings HTTP/1.1
+
+###
+
+POST http://{{hostname}}:{{port}}/api/{{api_version}}/opening HTTP/1.1
+Content-Type: {{content_type}}
+
+{}
+
+###
+
+DELETE http://{{hostname}}:{{port}}/api/{{api_version}}/opening HTTP/1.1
+
+###
+
+PUT http://{{hostname}}:{{port}}/api/{{api_version}}/opening HTTP/1.1
+Content-Type: {{content_type}}
+
+{}
